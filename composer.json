@@ -1,0 +1,40 @@
+{
+    "name": "octopyid/laravel-datatable",
+    "description": "jQuery DataTables API for Laravel 7.x",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Supian M",
+            "email": "supianidz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+        "yajra/laravel-datatables": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Octopy\\DataTable\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Octopy\\DataTable\\DataTableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

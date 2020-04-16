@@ -1,0 +1,35 @@
+<?php
+
+namespace App\DataTables;
+
+use App\{{modelNameSingular}};
+use Octopy\DataTable\DataTable;
+use Octopy\DataTable\DataTableHTMLBuilder;
+use Octopy\DataTable\DataTableColumnBuilder;
+
+class {{modelNamePlural}}DataTable extends DataTable
+{
+    /**
+     * @return Collection
+     */
+    public function query()
+    {
+        return {{modelNameSingular}}::get();
+    }
+
+    /**
+     * @param DataTableColumnEditor $table
+     */
+    public function html(DataTableHTMLBuilder $table): void
+    {
+        //
+    }
+
+    /**
+     * @param DataTableColumnBuilder $column
+     */
+    public function json(DataTableColumnBuilder $column): void
+    {
+        //
+    }
+}
